@@ -14,12 +14,20 @@
     h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
     .date { color: #bbcabf; font-size: 13px; margin-bottom: 40px; }
     h2 { font-size: 16px; font-weight: 700; color: #4edea3; margin: 32px 0 10px; }
+    h3 { font-size: 14px; font-weight: 700; color: #e5e2e1; margin: 20px 0 8px; }
     p { font-size: 14px; color: #bbcabf; line-height: 1.75; margin-bottom: 12px; }
     ul { padding-left: 20px; margin-bottom: 12px; }
     li { font-size: 14px; color: #bbcabf; line-height: 1.75; margin-bottom: 4px; }
     .divider { border: none; border-top: 1px solid #3c4a42; margin: 32px 0; }
     footer { margin-top: 48px; font-size: 12px; color: #bbcabf; text-align: center; }
     a { color: #4edea3; }
+    strong { color: #e5e2e1; }
+    .summary { background: rgba(78,222,163,0.06); border: 1px solid #3c4a42; border-radius: 12px; padding: 20px 20px 8px; margin-bottom: 32px; }
+    .summary li { margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    th { text-align: left; font-size: 12px; font-weight: 700; color: #e5e2e1; padding: 8px 10px; border-bottom: 1px solid #3c4a42; }
+    td { font-size: 13px; color: #bbcabf; line-height: 1.6; padding: 8px 10px; border-bottom: 1px solid rgba(60,74,66,0.5); vertical-align: top; }
+    .note { border-left: 2px solid #4edea3; padding-left: 14px; margin: 16px 0; }
   </style>
 </head>
 <body>
@@ -27,73 +35,168 @@
     <a class="back" href="index.html">← Back</a>
     <div class="badge">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 2 May 2025</p>
+    <p class="date">Last updated: 2 September 2026 · replaces the version dated 2 May 2025</p>
 
-    <p>This Privacy Policy describes how Ashton Ryan and Zavier Darcy ("we", "us", or "our") collect, use, and protect your information when you use the Crisper AI mobile application ("the App"). By using the App you agree to this policy.</p>
+    <p>Crisper AI is operated by Ashton Ryan and Zavier Darcy ("we", "us", or "our"). You can reach us at <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a>.</p>
+    <p>This policy explains what we collect, where it goes, and what you can do about it. We have tried to describe what the App actually does rather than what a privacy policy usually says — including the things we <em>don't</em> collect, and the one limitation we have chosen to live with.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p><strong style="color:#e5e2e1">Information you provide directly:</strong></p>
+    <div class="summary">
+      <ul>
+        <li>We store your account, your body stats and your food, weight, water and activity logs so they sync between your devices.</li>
+        <li><strong>We never store your photos.</strong> A fridge or meal photo is sent to our AI provider, analysed, and discarded. It is not saved on our servers at any point.</li>
+        <li><strong>We run no analytics and no advertising.</strong> There is no tracking software in the App. We do not sell or share your data for marketing, and we do not track you across other apps or websites.</li>
+        <li>Deleting your account deletes your data <strong>immediately</strong>, not eventually.</li>
+        <li>The minimum age is 13, and the App deliberately refuses to put anyone under 18 into a calorie deficit.</li>
+      </ul>
+    </div>
+
+    <h2>1. What we collect</h2>
+    <h3>Information you give us</h3>
+    <table>
+      <tr><th>Category</th><th>Examples</th></tr>
+      <tr><td>Account</td><td>Email address and password. The password is stored only as a salted hash by our authentication provider — we never see it</td></tr>
+      <tr><td>Health and body information</td><td>Age, sex, height, weight, activity level, dietary preferences, and your goal (lose fat, maintain, gain)</td></tr>
+      <tr><td>Food and nutrition logs</td><td>Meals you log, favourites, custom meals, shopping lists</td></tr>
+      <tr><td>Progress logs</td><td>Weight entries, water intake, activity minutes</td></tr>
+      <tr><td>Referral information</td><td>A referral code you enter, and which plan you chose</td></tr>
+    </table>
+
+    <h3>Information generated as you use the App</h3>
+    <table>
+      <tr><th>Category</th><th>Detail</th></tr>
+      <tr><td>Scan history</td><td>The date of each scan, how many items and meals it found, the pantry score where one was produced, and the <strong>names</strong> of detected ingredients. No images are kept</td></tr>
+      <tr><td>Subscription status</td><td>Whether you hold an active subscription, and which tier</td></tr>
+      <tr><td>Server logs</td><td>Our API records the time, endpoint, response status, duration, your IP address and a <strong>truncated</strong> account identifier. Logs never contain prompts, photos or sign-in tokens</td></tr>
+    </table>
+
+    <h3>Information stored only on your device</h3>
+    <p>Your sign-in tokens are held in the iOS Keychain, marked so they are not included in device backups and do not sync to your other devices. Your app state and display preferences are stored locally. None of this is readable by us.</p>
+
+    <h2>2. What we do NOT collect</h2>
+    <p>We are stating these explicitly because our previous policy claimed some of them:</p>
     <ul>
-      <li>Email address and password when creating an account</li>
-      <li>Body statistics including age, weight, height, and fitness goals</li>
-      <li>Food and meal logs you create or scan</li>
-      <li>Progress photos you choose to upload</li>
-      <li>Weight log entries</li>
-      <li>Custom meals and shopping list preferences</li>
-    </ul>
-    <p><strong style="color:#e5e2e1">Information collected automatically:</strong></p>
-    <ul>
-      <li>Barcode scan data used to look up food nutrition information</li>
-      <li>Camera images used for food scanning — processed to identify meals and macros, not stored on our servers</li>
-      <li>App usage data for improving functionality</li>
-    </ul>
-
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>Create and manage your account</li>
-      <li>Provide personalised meal tracking, macro calculations, and nutrition insights</li>
-      <li>Display your progress over time</li>
-      <li>Generate shopping lists and meal suggestions</li>
-      <li>Respond to support requests</li>
-    </ul>
-    <p>We do not use your data for advertising and we do not sell your data to any third party.</p>
-
-    <h2>3. How We Store Your Information</h2>
-    <p>Your account and data are stored securely using <strong style="color:#e5e2e1">Supabase</strong>, a third-party cloud database provider with servers located in the United States. Data stored locally on your device remains on your device and is not transmitted to our servers unless you are signed in to an account.</p>
-
-    <h2>4. Camera and Photo Library Access</h2>
-    <p>The App requests camera access solely to scan food items and log meals. Images are processed on-device or sent to an AI service to identify food and estimate nutrition — they are not stored permanently on our servers.</p>
-    <p>The App requests photo library access solely to allow you to save or retrieve progress photos. We do not share camera or photo data with any third party for marketing purposes.</p>
-
-    <h2>5. Children's Privacy</h2>
-    <p>Crisper AI is not intended for use by children under the age of 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a> and we will delete it promptly.</p>
-
-    <h2>6. Your Rights</h2>
-    <ul>
-      <li>Access the personal data we hold about you</li>
-      <li>Request correction of inaccurate data</li>
-      <li>Delete your account and all data — via Profile → Delete Account in the App, or by emailing us</li>
-      <li>Withdraw consent at any time by deleting your account</li>
-    </ul>
-    <p>We handle your data in accordance with the <strong style="color:#e5e2e1">Australian Privacy Act 1988</strong> and the Australian Privacy Principles.</p>
-
-    <h2>7. Third-Party Services</h2>
-    <ul>
-      <li><strong style="color:#e5e2e1">Supabase</strong> — authentication and data storage</li>
-      <li><strong style="color:#e5e2e1">OpenAI / AI food analysis</strong> — meal and food recognition from images</li>
+      <li><strong>No photographs are stored.</strong> We have no image storage, no media buckets and no upload path. Photos are transient only — see section 3</li>
+      <li><strong>No usage analytics.</strong> The App contains no analytics or crash-reporting software</li>
+      <li><strong>No progress photos.</strong> Our earlier policy said you could upload these; the feature does not exist and never shipped</li>
+      <li><strong>No advertising identifiers, no cross-app tracking, no data brokers</strong></li>
+      <li><strong>No precise location.</strong> We never request or receive your location</li>
+      <li><strong>No contacts, calendar, microphone or Health-app data</strong></li>
     </ul>
 
-    <h2>8. Data Retention</h2>
-    <p>We retain your data for as long as your account is active. When you delete your account, all associated data is permanently removed from our systems within 30 days.</p>
+    <h2>3. Photos and AI analysis</h2>
+    <p>This is the part people most want to understand, so here it is in full. When you scan your fridge or a meal:</p>
+    <ul>
+      <li>The photo is resized down on your device first, so a smaller image than the one your camera took is what leaves your phone (never more than 1024px on the longest edge, and 768px for meal scans)</li>
+      <li>It is sent over an encrypted connection to our API proxy, hosted on <strong>Railway</strong></li>
+      <li>The proxy forwards it to <strong>Anthropic</strong>, which runs the Claude model that identifies the food and estimates nutrition</li>
+      <li>The result comes back as text. <strong>The photo is not written to disk by us at any stage</strong> and is not retained after the request completes</li>
+    </ul>
+    <p>Some clarifications, because the previous policy was imprecise:</p>
+    <ul>
+      <li><strong>Food photo analysis always happens off your device.</strong> It cannot be done locally. Only barcode decoding runs on-device</li>
+      <li><strong>Our AI provider is Anthropic, not OpenAI.</strong> The earlier policy named the wrong company. Anthropic processes the image to answer that one request and, under its commercial API terms, does not use it to train its models</li>
+      <li>Nutrition estimates are <strong>estimates</strong>. The App deliberately shows ranges and confidence levels rather than false precision. Do not treat them as medical or dietary advice</li>
+    </ul>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
+    <h2>4. Barcode scanning</h2>
+    <p>Barcodes are decoded on your device. Once decoded, the barcode number is sent to <strong>Open Food Facts</strong>, an independent open database, to look up product nutrition information. Only the barcode number is sent — no account information, and no photograph.</p>
 
-    <h2>10. Contact Us</h2>
+    <h2>5. Why we use your information</h2>
+    <ul>
+      <li>To create and maintain your account, and sync your data across your devices</li>
+      <li>To calculate your calorie and macronutrient targets from the body information you provide</li>
+      <li>To identify food from the photos you choose to scan, and estimate its nutrition</li>
+      <li>To generate meal suggestions, recipes and reports from what is in your logs</li>
+      <li>To operate, secure and rate-limit our service, and control our AI costs</li>
+      <li>To manage subscriptions and honour referral discounts</li>
+    </ul>
+    <p>We do not use your information for advertising, profiling for third parties, or any automated decision-making with a legal effect on you.</p>
+
+    <h2>6. Who we share it with</h2>
+    <p>We use the following service providers. Each receives only what it needs, and none of them are permitted to use your data for their own purposes.</p>
+    <table>
+      <tr><th>Provider</th><th>What it handles</th><th>Where</th></tr>
+      <tr><td><strong>Supabase</strong></td><td>Authentication and the database holding your account and logs</td><td>United States</td></tr>
+      <tr><td><strong>Railway</strong></td><td>Hosts our API proxy; your photos and prompts pass through it in transit</td><td>United States</td></tr>
+      <tr><td><strong>Anthropic</strong></td><td>AI analysis of scanned photos and text prompts</td><td>United States</td></tr>
+      <tr><td><strong>RevenueCat</strong></td><td>Subscription and entitlement management</td><td>United States</td></tr>
+      <tr><td><strong>Apple</strong></td><td>Processes all payments through the App Store. We never see your payment details</td><td>Per Apple's terms</td></tr>
+      <tr><td><strong>Open Food Facts</strong></td><td>Barcode product lookups (barcode number only)</td><td>France / community-hosted</td></tr>
+    </table>
+    <p>We may also disclose information where we are legally required to, or to protect someone's safety or our legal rights. <strong>We do not sell your personal information, and we never have.</strong></p>
+
+    <h2>7. Overseas disclosure</h2>
+    <p>Because the providers above are mostly based in the United States, your information is disclosed overseas. Under Australian Privacy Principle 8 we take reasonable steps to ensure overseas recipients handle your information consistently with the Australian Privacy Principles, primarily through our contractual terms with each provider. By using Crisper AI you consent to this overseas disclosure.</p>
+
+    <h2>8. Health information and your consent</h2>
+    <p>Your weight, body measurements, dietary preferences and fitness goals are <strong>health information</strong>, which is "sensitive information" under the Australian Privacy Act and a "special category" under the GDPR. Both give it a higher level of protection.</p>
+    <p>We collect it <strong>only with your consent</strong>, which you give by entering it during onboarding, and only to calculate your nutrition targets and personalise suggestions. You can withdraw that consent at any time by deleting your account. We never disclose health information to anyone other than the providers in section 6 who are necessary to run the App.</p>
+
+    <h2>9. How we protect it</h2>
+    <ul>
+      <li>All traffic uses encrypted HTTPS connections</li>
+      <li>Your database rows are protected by <strong>row-level security</strong>, enforced per user by our database. Every read and write is scoped to your own account identifier, so one account cannot reach another's data</li>
+      <li>Our AI proxy will not accept a request without a <strong>cryptographically verified</strong> sign-in token. It pins the AI model and caps request sizes server-side, so a modified copy of the App cannot change them</li>
+      <li>Sign-in tokens are stored in the iOS Keychain rather than in web storage, and are excluded from device backups</li>
+      <li>Our providers encrypt data at rest</li>
+    </ul>
+    <div class="note">
+      <p><strong>One limitation we want to be straight about.</strong> Sign-in tokens are valid for up to one hour and are verified by signature rather than checked against a list on every request. If you sign out or delete your account you cannot obtain a new token — but a token already issued keeps working until it expires, at most one hour later. We accepted this because the window is short, cannot be extended, and is tightly rate-limited. No security design is perfect and we would rather tell you than imply otherwise.</p>
+    </div>
+
+    <h2>10. How long we keep it, and deletion</h2>
+    <p>We keep your information while your account exists.</p>
+    <p><strong>Deleting your account deletes your data immediately.</strong> Go to Profile → Delete Account in the App, or email us at <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a> and we will do it for you. This removes your account and all associated records — profile, meals, favourites, scan history, custom meals, weight, water and activity logs — in a single operation, not on a 30-day timer as our previous policy stated.</p>
+    <p>Two things survive briefly and for narrow reasons:</p>
+    <ul>
+      <li><strong>Server logs</strong> (timestamp, endpoint, status, IP, truncated account id) persist in our hosting provider's rolling log retention. They contain no personal content</li>
+      <li><strong>Apple's purchase records</strong> are governed by Apple's own policy; we cannot delete those</li>
+    </ul>
+    <p>Because we never store your photos, there are no photos to delete.</p>
+
+    <h2>11. Accessing and correcting your information</h2>
+    <p>Most of your information is directly visible and editable inside the App — your profile, your logs and your history. You can correct it there at any time.</p>
+    <p>If you want a copy of everything we hold, or want something corrected that the App will not let you change, email <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a>. We will respond within 30 days. There is no charge. If we refuse a request we will tell you why in writing.</p>
+
+    <h2>12. Age requirements and under-18s</h2>
+    <p><strong>Crisper AI is not for children under 13.</strong> We do not knowingly collect information from anyone under 13, and if we discover we have, we will delete it.</p>
+    <p>If you are <strong>13 to 17</strong>, please use Crisper AI with a parent or guardian's knowledge and involvement, and talk to them before making changes to how you eat. In some countries, including much of the EU and UK, a parent or guardian must consent on your behalf — by using the App you confirm that consent has been given where it is required.</p>
+    <p>One deliberate design choice you should know about: <strong>the App will not put anyone under 18 into a calorie deficit.</strong> If you are under 18 and select a fat-loss goal, your target is raised to your estimated maintenance level instead. Goals that involve eating more are unaffected. Growing bodies should not be calorie-restricted by an app, and an earlier version of Crisper AI got this wrong.</p>
+    <p>If you are a parent or guardian and want your child's account and data removed, email us and we will do it.</p>
+
+    <h2>13. Data breaches</h2>
+    <p>If a breach occurs that is likely to result in serious harm, we will notify affected users and the Office of the Australian Information Commissioner as required by the Notifiable Data Breaches scheme, and any other regulator we are obliged to inform. We will tell you what happened, what was affected, and what to do about it.</p>
+
+    <h2>14. If you are in the EU or the UK</h2>
+    <p>We process your information on these legal bases under the GDPR and UK GDPR:</p>
+    <table>
+      <tr><th>Purpose</th><th>Legal basis</th></tr>
+      <tr><td>Running your account and providing the App</td><td>Performance of a contract</td></tr>
+      <tr><td>Health information used for nutrition targets</td><td><strong>Explicit consent</strong> (Article 9)</td></tr>
+      <tr><td>Security, abuse prevention, cost control</td><td>Legitimate interests</td></tr>
+      <tr><td>Legal and regulatory obligations</td><td>Legal obligation</td></tr>
+    </table>
+    <p>You have the right to access, correct, delete or export your data, to restrict or object to processing, to withdraw consent at any time, and to lodge a complaint with your local data protection authority. We do not use your data for automated decision-making that produces legal effects.</p>
+    <p>For these purposes the data controller is Ashton Ryan and Zavier Darcy, at <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a>.</p>
+
+    <h2>15. If you are in California</h2>
+    <p>We do <strong>not</strong> sell your personal information, and we do not share it for cross-context behavioural advertising. You have the right to know what we collect, to request deletion, to request a copy, and not to be discriminated against for exercising those rights. Email us to make a request. The categories we collect are listed in section 1; the parties we disclose to are in section 6.</p>
+
+    <h2>16. Subscriptions and payments</h2>
+    <p>Subscriptions are billed by Apple through the App Store. We never receive or store your card details. Manage or cancel a subscription in your Apple account settings — cancelling stops future charges; it does not delete your Crisper AI data. To delete your data, delete your account as described in section 10.</p>
+
+    <h2>17. Changes to this policy</h2>
+    <p>If we change this policy we will update the date at the top and, for anything that materially affects you, tell you in the App. Continuing to use Crisper AI after a change means you accept the updated policy.</p>
+
+    <h2>18. Complaints</h2>
+    <p>If you think we have mishandled your information, email <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a> and we will investigate and respond within 30 days.</p>
+    <p>If you are not satisfied with our response, you can complain to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a>, or to your local data protection authority if you are outside Australia.</p>
+
+    <h2>19. Contact us</h2>
     <p>Email: <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a><br>Developers: Ashton Ryan &amp; Zavier Darcy</p>
 
     <hr class="divider">
-    <footer>© 2025 Crisper AI · <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a></footer>
+    <footer>© 2026 Crisper AI · <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a></footer>
   </div>
 </body>
 </html>
