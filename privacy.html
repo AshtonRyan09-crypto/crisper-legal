@@ -35,7 +35,7 @@
     <a class="back" href="index.html">← Back</a>
     <div class="badge">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 29 September 2026 · replaces the version dated 2 September 2026</p>
+    <p class="date">Last updated: 23 October 2026 · replaces the version dated 29 September 2026</p>
 
     <p>Crisper AI is operated by Ashton Ryan and Zavier Darcy ("we", "us", or "our"). You can reach us at <a href="mailto:crisperaiapp@gmail.com">crisperaiapp@gmail.com</a>.</p>
     <p>This policy explains what we collect, where it goes, and what you can do about it. We have tried to describe what the App actually does rather than what a privacy policy usually says — including the things we <em>don't</em> collect, and the one limitation we have chosen to live with.</p>
@@ -44,7 +44,7 @@
       <ul>
         <li>We store your account, your body stats and your food, weight, water and activity logs so they sync between your devices.</li>
         <li><strong>We never store your photos.</strong> A fridge or meal photo is sent to our AI provider, analysed, and discarded. It is not saved on our servers at any point.</li>
-        <li><strong>We run no analytics and no advertising.</strong> There is no tracking software in the App. We do not sell or share your data for marketing, and we do not track you across other apps or websites.</li>
+        <li><strong>No ads in the App and no ad tracking.</strong> There is no tracking software in the App. We do not sell or share your data for marketing, and we do not track you across other apps or websites. If you download Crisper AI from an Apple Ads ad on the App Store, Apple tells us which campaign it came from — no advertising ID, no tracking permission, nothing shared with ad networks.</li>
         <li>Deleting your account deletes your data <strong>immediately</strong>, not eventually.</li>
         <li>The minimum age is 13, and the App deliberately refuses to put anyone under 18 into a calorie deficit.</li>
       </ul>
@@ -54,7 +54,7 @@
     <h3>Information you give us</h3>
     <table>
       <tr><th>Category</th><th>Examples</th></tr>
-      <tr><td>Account</td><td>Email address and password. The password is stored only as a salted hash by our authentication provider — we never see it</td></tr>
+      <tr><td>Account</td><td>Your name as you enter it, your email address, and your password. The password is stored only as a salted hash by our authentication provider — we never see it</td></tr>
       <tr><td>Health and body information</td><td>Age, sex, height, weight, activity level, dietary preferences, and your goal (lose fat, maintain, gain)</td></tr>
       <tr><td>Food and nutrition logs</td><td>Meals you log, favourites, custom meals, shopping lists</td></tr>
       <tr><td>Progress logs</td><td>Weight entries, water intake, activity minutes</td></tr>
@@ -66,6 +66,7 @@
       <tr><th>Category</th><th>Detail</th></tr>
       <tr><td>Scan history</td><td>The date of each scan, how many items and meals it found, the pantry score where one was produced, and the <strong>names</strong> of detected ingredients. No images are kept</td></tr>
       <tr><td>Subscription status</td><td>Whether you hold an active subscription, and which tier</td></tr>
+      <tr><td>How you found the App</td><td>Whether you installed from an Apple Ads ad on the App Store and, if so, which campaign. Apple supplies this; it contains no advertising identifier and needs no tracking permission</td></tr>
       <tr><td>Server logs</td><td>Our API records the time, endpoint, response status, duration, your IP address and a <strong>truncated</strong> account identifier. Logs never contain prompts, photos or sign-in tokens</td></tr>
     </table>
 
@@ -112,8 +113,9 @@
       <li>To generate meal suggestions, recipes and reports from what is in your logs</li>
       <li>To operate, secure and rate-limit our service, and control our AI costs</li>
       <li>To manage subscriptions and honour referral discounts</li>
+      <li>To see whether our Apple Ads ads on the App Store lead to subscriptions, by counting how many subscribers came from an ad and how many found us themselves</li>
     </ul>
-    <p>We do not use your information for advertising, profiling for third parties, or any automated decision-making with a legal effect on you.</p>
+    <p>We do not use your information to show or target ads at you, to profile you for third parties, or for any automated decision-making with a legal effect on you.</p>
 
     <h2>6. Who we share it with</h2>
     <p>We use the following service providers. Each receives only what it needs, and none of them are permitted to use your data for their own purposes.</p>
@@ -122,8 +124,8 @@
       <tr><td><strong>Supabase</strong></td><td>Authentication and the database holding your account and logs</td><td>United States</td></tr>
       <tr><td><strong>Railway</strong></td><td>Hosts our API proxy; your photos and prompts pass through it in transit</td><td>United States</td></tr>
       <tr><td><strong>Anthropic</strong></td><td>AI analysis of scanned photos and text prompts</td><td>United States</td></tr>
-      <tr><td><strong>RevenueCat</strong></td><td>Subscription and entitlement management</td><td>United States</td></tr>
-      <tr><td><strong>Apple</strong></td><td>Processes all payments through the App Store. We never see your payment details</td><td>Per Apple's terms</td></tr>
+      <tr><td><strong>RevenueCat</strong></td><td>Subscription and entitlement management, and matching an Apple Ads install to a subscription</td><td>United States</td></tr>
+      <tr><td><strong>Apple</strong></td><td>Processes all payments through the App Store. We never see your payment details. Also tells us whether you installed from an Apple Ads ad</td><td>Per Apple's terms</td></tr>
       <tr><td><strong>Open Food Facts</strong></td><td>Barcode product lookups (barcode number only) and food search (search text only)</td><td>France / community-hosted</td></tr>
     </table>
     <p>We may also disclose information where we are legally required to, or to protect someone's safety or our legal rights. <strong>We do not sell your personal information, and we never have.</strong></p>
@@ -177,6 +179,7 @@
       <tr><td>Running your account and providing the App</td><td>Performance of a contract</td></tr>
       <tr><td>Health information used for nutrition targets</td><td><strong>Explicit consent</strong> (Article 9)</td></tr>
       <tr><td>Security, abuse prevention, cost control</td><td>Legitimate interests</td></tr>
+      <tr><td>Measuring whether our App Store ads lead to subscriptions</td><td>Legitimate interests</td></tr>
       <tr><td>Legal and regulatory obligations</td><td>Legal obligation</td></tr>
     </table>
     <p>You have the right to access, correct, delete or export your data, to restrict or object to processing, to withdraw consent at any time, and to lodge a complaint with your local data protection authority. We do not use your data for automated decision-making that produces legal effects.</p>
